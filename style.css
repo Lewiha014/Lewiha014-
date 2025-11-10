@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background: black url("coldwar.png") center/cover no-repeat;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.storeKnapper {
+  padding: 20px 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #007bff; /* Vanlig blå farge */
+  color: white;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+
+.storeKnapper:hover {
+  background-color: #0056b3; /* Litt mørkere blå ved hover */
+}
+
+.sortBakgrunn {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 50%);
+  color: whitesmoke;
+  width: 300px;
+  font-size: 20px;
+}
+section {
+  display: flex;
+}
+.sumText {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  font-size: 36px;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.oppgraderingerBoks {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.varePerPrisBokser {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.litenKnapp {
+  background-color: #222;
+  color: white;
+  border: 1px solid #555;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.litenKnapp:hover {
+  background-color: #444;
+}
+
+.plussKnapp {
+  background-color: #007bff;
+  font-weight: bold;
+}
+
+.minusKnapp {
+  background-color: #007bff;
+}
+.oppgrKnapp {
+  background-color: #007bff;
+  font-size: 10px;
+  color: aliceblue;
+}

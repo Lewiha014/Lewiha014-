@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krigsspill</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sumText" id="sum">0 kr</div>
+
+    <section>
+      <div class="sortBakgrunn">
+        <button class="storeKnapper" onclick="lagVare()">LAG VARE</button>
+        <button class="storeKnapper" onclick="selgVare()">SELG VARE</button>
+        <p>ANTALL VARER: <span id="varerAntall">0</span></p>
+        <p>ANTALL SOLDATER: <span id="soldatAntall">0</span></p>
+      </div>
+
+      <div class="sortBakgrunn">
+        <button class="autoclikker" onclick="kjopAutoLag()">
+          Auto Lag <span id="autoLagPris">1 kr</span>
+        </button>
+        <button class="autoclikker" onclick="kjopAutoSelg()">
+          Auto Selg <span id="autoSelgPris">1 kr</span>
+        </button>
+
+        <div class="kostnadOverskrift">
+          <button class="varePerPris">
+            Pris per vare: <span id="varePerPris">10 kr</span>
+          </button>
+          <div class="varePerPrisBokser">
+            <button class="litenKnapp minusKnapp" onclick="senkPrisen()">
+              −
+            </button>
+            <button class="litenKnapp plussKnapp" onclick="økPrisen()">
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="oppgraderingerBoks">
+        <h2>OPPGRADERINGER</h2>
+        <div id="oppgrContainer">Ingen oppgraderinger enda</div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
